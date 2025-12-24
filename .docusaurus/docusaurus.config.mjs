@@ -7,7 +7,7 @@ export default {
   "title": "AI Native Book - Humanoid Robotics",
   "tagline": "A comprehensive guide to Physical AI and Humanoid Robotics",
   "favicon": "img/favicon.ico",
-  "url": "https://your-username.github.io",
+  "url": "https://ai-native-book-humanoid-k2ezopweo-anum-ejazs-projects.vercel.app/",
   "baseUrl": "/",
   "organizationName": "your-org",
   "projectName": "your-project",
