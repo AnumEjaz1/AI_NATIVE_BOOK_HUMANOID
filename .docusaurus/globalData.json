@@ -1,0 +1,103 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1/chapter-1-ros2-architecture",
+              "path": "/docs/module-1/chapter-1-ros2-architecture",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1/chapter-2-python-agents-rclpy",
+              "path": "/docs/module-1/chapter-2-python-agents-rclpy",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-1/chapter-3-urdf-humanoids",
+              "path": "/docs/module-1/chapter-3-urdf-humanoids",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/chapter-1-physics-simulation-with-gazebo",
+              "path": "/docs/module-2/chapter-1-physics-simulation-with-gazebo",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/chapter-2-high-fidelity-interaction-with-unity",
+              "path": "/docs/module-2/chapter-2-high-fidelity-interaction-with-unity",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/chapter-3-sensor-simulation-for-perception",
+              "path": "/docs/module-2/chapter-3-sensor-simulation-for-perception",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/glossary",
+              "path": "/docs/module-2/glossary",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
+              "path": "/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3/chapter-2-isaac-ros-and-accelerated-perception",
+              "path": "/docs/module-3/chapter-2-isaac-ros-and-accelerated-perception",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3/chapter-3-navigation-with-nav2-for-humanoid-robots",
+              "path": "/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-3/glossary",
+              "path": "/docs/module-3/glossary",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/chapter-1-voice-to-action",
+              "path": "/docs/module-4/chapter-1-voice-to-action",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/chapter-2-cognitive-planning",
+              "path": "/docs/module-4/chapter-2-cognitive-planning",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/chapter-3-capstone-integration",
+              "path": "/docs/module-4/chapter-3-capstone-integration",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

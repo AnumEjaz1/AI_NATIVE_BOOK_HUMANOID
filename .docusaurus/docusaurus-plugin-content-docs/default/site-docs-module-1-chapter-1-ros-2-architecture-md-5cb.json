@@ -1,0 +1,27 @@
+{
+  "id": "module-1/chapter-1-ros2-architecture",
+  "title": "ROS 2 Architecture Fundamentals",
+  "description": "This chapter covers the core concepts of ROS 2 architecture including nodes, topics, services, actions, and DDS concepts, explaining why ROS 2 is suited for real-time humanoid control.",
+  "source": "@site/docs/module-1/chapter-1-ros2-architecture.md",
+  "sourceDirName": "module-1",
+  "slug": "/module-1/chapter-1-ros2-architecture",
+  "permalink": "/docs/module-1/chapter-1-ros2-architecture",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1/chapter-1-ros2-architecture.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Python Agents and Robot Control",
+    "permalink": "/docs/module-1/chapter-2-python-agents-rclpy"
+  }
+}

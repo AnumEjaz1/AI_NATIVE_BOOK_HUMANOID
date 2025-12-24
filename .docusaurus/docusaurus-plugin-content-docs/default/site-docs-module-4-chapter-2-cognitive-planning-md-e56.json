@@ -1,0 +1,28 @@
+{
+  "id": "module-4/chapter-2-cognitive-planning",
+  "title": "Chapter 2: Cognitive Planning - Using LLMs for Natural Language Goal Conversion",
+  "description": "Overview",
+  "source": "@site/docs/module-4/chapter-2-cognitive-planning.md",
+  "sourceDirName": "module-4",
+  "slug": "/module-4/chapter-2-cognitive-planning",
+  "permalink": "/docs/module-4/chapter-2-cognitive-planning",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4/chapter-2-cognitive-planning.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Chapter 2: Cognitive Planning - Using LLMs for Natural Language Goal Conversion"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing",
+    "permalink": "/docs/module-4/chapter-1-voice-to-action"
+  },
+  "next": {
+    "title": "Chapter 3: Capstone - End-to-End Autonomous Humanoid Integration",
+    "permalink": "/docs/module-4/chapter-3-capstone-integration"
+  }
+}

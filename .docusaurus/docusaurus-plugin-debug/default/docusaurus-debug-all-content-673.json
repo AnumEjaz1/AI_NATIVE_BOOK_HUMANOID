@@ -1,0 +1,551 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/docs",
+          "tagsPath": "/docs/tags",
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
+          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "C:\\Users\\FUJITSU\\OneDrive\\Desktop\\hackathon\\AI_NATIVE_BOOK_HUMANOID\\sidebars.js",
+          "contentPath": "C:\\Users\\FUJITSU\\OneDrive\\Desktop\\hackathon\\AI_NATIVE_BOOK_HUMANOID\\docs",
+          "contentPathLocalized": "C:\\Users\\FUJITSU\\OneDrive\\Desktop\\hackathon\\AI_NATIVE_BOOK_HUMANOID\\i18n\\en\\docusaurus-plugin-content-docs\\current",
+          "docs": [
+            {
+              "id": "intro",
+              "title": "Introduction",
+              "description": "Welcome to the AI Native Book on Humanoid Robotics. This comprehensive guide covers the essential concepts of Physical AI and humanoid robotics, from foundational principles to advanced implementation techniques.",
+              "source": "@site/docs/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/docs/intro",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "ROS 2 Architecture Fundamentals",
+                "permalink": "/docs/module-1/chapter-1-ros2-architecture"
+              }
+            },
+            {
+              "id": "module-1/chapter-1-ros2-architecture",
+              "title": "ROS 2 Architecture Fundamentals",
+              "description": "This chapter covers the core concepts of ROS 2 architecture including nodes, topics, services, actions, and DDS concepts, explaining why ROS 2 is suited for real-time humanoid control.",
+              "source": "@site/docs/module-1/chapter-1-ros2-architecture.md",
+              "sourceDirName": "module-1",
+              "slug": "/module-1/chapter-1-ros2-architecture",
+              "permalink": "/docs/module-1/chapter-1-ros2-architecture",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1/chapter-1-ros2-architecture.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/intro"
+              },
+              "next": {
+                "title": "Python Agents and Robot Control",
+                "permalink": "/docs/module-1/chapter-2-python-agents-rclpy"
+              }
+            },
+            {
+              "id": "module-1/chapter-2-python-agents-rclpy",
+              "title": "Python Agents and Robot Control",
+              "description": "This chapter demonstrates how to use rclpy to connect Python agents with ROS 2 controllers, explaining message flow, lifecycle nodes, and control abstraction.",
+              "source": "@site/docs/module-1/chapter-2-python-agents-rclpy.md",
+              "sourceDirName": "module-1",
+              "slug": "/module-1/chapter-2-python-agents-rclpy",
+              "permalink": "/docs/module-1/chapter-2-python-agents-rclpy",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1/chapter-2-python-agents-rclpy.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "ROS 2 Architecture Fundamentals",
+                "permalink": "/docs/module-1/chapter-1-ros2-architecture"
+              },
+              "next": {
+                "title": "Robot Modeling with URDF",
+                "permalink": "/docs/module-1/chapter-3-urdf-humanoids"
+              }
+            },
+            {
+              "id": "module-1/chapter-3-urdf-humanoids",
+              "title": "Robot Modeling with URDF",
+              "description": "This chapter provides clear explanations of URDF (Unified Robot Description Format) structure for humanoid robots, including links, joints, sensors, coordinate frames, and preparing models for simulation.",
+              "source": "@site/docs/module-1/chapter-3-urdf-humanoids.md",
+              "sourceDirName": "module-1",
+              "slug": "/module-1/chapter-3-urdf-humanoids",
+              "permalink": "/docs/module-1/chapter-3-urdf-humanoids",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1/chapter-3-urdf-humanoids.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Python Agents and Robot Control",
+                "permalink": "/docs/module-1/chapter-2-python-agents-rclpy"
+              },
+              "next": {
+                "title": "Physics Simulation with Gazebo",
+                "permalink": "/docs/module-2/chapter-1-physics-simulation-with-gazebo"
+              }
+            },
+            {
+              "id": "module-2/chapter-1-physics-simulation-with-gazebo",
+              "title": "Physics Simulation with Gazebo",
+              "description": "This chapter covers simulating gravity, collisions, joint dynamics, world files, and integrating ROS 2 with Gazebo for humanoid robots.",
+              "source": "@site/docs/module-2/chapter-1-physics-simulation-with-gazebo.md",
+              "sourceDirName": "module-2",
+              "slug": "/module-2/chapter-1-physics-simulation-with-gazebo",
+              "permalink": "/docs/module-2/chapter-1-physics-simulation-with-gazebo",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/chapter-1-physics-simulation-with-gazebo.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Physics Simulation with Gazebo",
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Robot Modeling with URDF",
+                "permalink": "/docs/module-1/chapter-3-urdf-humanoids"
+              },
+              "next": {
+                "title": "High-Fidelity Interaction with Unity",
+                "permalink": "/docs/module-2/chapter-2-high-fidelity-interaction-with-unity"
+              }
+            },
+            {
+              "id": "module-2/chapter-2-high-fidelity-interaction-with-unity",
+              "title": "High-Fidelity Interaction with Unity",
+              "description": "This chapter covers Unity as a digital twin environment, real-time rendering, humanoid interaction scenarios, and syncing simulation state with ROS 2.",
+              "source": "@site/docs/module-2/chapter-2-high-fidelity-interaction-with-unity.md",
+              "sourceDirName": "module-2",
+              "slug": "/module-2/chapter-2-high-fidelity-interaction-with-unity",
+              "permalink": "/docs/module-2/chapter-2-high-fidelity-interaction-with-unity",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/chapter-2-high-fidelity-interaction-with-unity.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "title": "High-Fidelity Interaction with Unity",
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Physics Simulation with Gazebo",
+                "permalink": "/docs/module-2/chapter-1-physics-simulation-with-gazebo"
+              },
+              "next": {
+                "title": "Sensor Simulation for Perception",
+                "permalink": "/docs/module-2/chapter-3-sensor-simulation-for-perception"
+              }
+            },
+            {
+              "id": "module-2/chapter-3-sensor-simulation-for-perception",
+              "title": "Sensor Simulation for Perception",
+              "description": "This chapter covers simulating LiDAR, depth cameras, and IMUs, sensor noise models, data streams, and preparing perception inputs for AI pipelines.",
+              "source": "@site/docs/module-2/chapter-3-sensor-simulation-for-perception.md",
+              "sourceDirName": "module-2",
+              "slug": "/module-2/chapter-3-sensor-simulation-for-perception",
+              "permalink": "/docs/module-2/chapter-3-sensor-simulation-for-perception",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/chapter-3-sensor-simulation-for-perception.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "title": "Sensor Simulation for Perception",
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "High-Fidelity Interaction with Unity",
+                "permalink": "/docs/module-2/chapter-2-high-fidelity-interaction-with-unity"
+              },
+              "next": {
+                "title": "Glossary",
+                "permalink": "/docs/module-2/glossary"
+              }
+            },
+            {
+              "id": "module-2/glossary",
+              "title": "Glossary",
+              "description": "This glossary defines key terms used throughout the Digital Twin Simulation Module (Module 2).",
+              "source": "@site/docs/module-2/glossary.md",
+              "sourceDirName": "module-2",
+              "slug": "/module-2/glossary",
+              "permalink": "/docs/module-2/glossary",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/glossary.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "title": "Glossary",
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Sensor Simulation for Perception",
+                "permalink": "/docs/module-2/chapter-3-sensor-simulation-for-perception"
+              },
+              "next": {
+                "title": "Chapter 1: NVIDIA Isaac Sim and Synthetic Data",
+                "permalink": "/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data"
+              }
+            },
+            {
+              "id": "module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
+              "title": "Chapter 1: NVIDIA Isaac Sim and Synthetic Data",
+              "description": "Learn how to use NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation for training perception models",
+              "source": "@site/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data.md",
+              "sourceDirName": "module-3",
+              "slug": "/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
+              "permalink": "/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "description": "Learn how to use NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation for training perception models"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Glossary",
+                "permalink": "/docs/module-2/glossary"
+              },
+              "next": {
+                "title": "Chapter 2: Isaac ROS and Accelerated Perception",
+                "permalink": "/docs/module-3/chapter-2-isaac-ros-and-accelerated-perception"
+              }
+            },
+            {
+              "id": "module-3/chapter-2-isaac-ros-and-accelerated-perception",
+              "title": "Chapter 2: Isaac ROS and Accelerated Perception",
+              "description": "Learn how to use Isaac ROS for hardware-accelerated Visual SLAM (VSLAM) and perception pipelines with ROS 2 integration",
+              "source": "@site/docs/module-3/chapter-2-isaac-ros-and-accelerated-perception.md",
+              "sourceDirName": "module-3",
+              "slug": "/module-3/chapter-2-isaac-ros-and-accelerated-perception",
+              "permalink": "/docs/module-3/chapter-2-isaac-ros-and-accelerated-perception",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/chapter-2-isaac-ros-and-accelerated-perception.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "description": "Learn how to use Isaac ROS for hardware-accelerated Visual SLAM (VSLAM) and perception pipelines with ROS 2 integration"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Chapter 1: NVIDIA Isaac Sim and Synthetic Data",
+                "permalink": "/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data"
+              },
+              "next": {
+                "title": "Chapter 3: Navigation with Nav2 for Humanoid Robots",
+                "permalink": "/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots"
+              }
+            },
+            {
+              "id": "module-3/chapter-3-navigation-with-nav2-for-humanoid-robots",
+              "title": "Chapter 3: Navigation with Nav2 for Humanoid Robots",
+              "description": "Learn how to adapt Nav2 for humanoid robot navigation, focusing on path planning, costmaps, and localization for bipedal locomotion",
+              "source": "@site/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots.md",
+              "sourceDirName": "module-3",
+              "slug": "/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots",
+              "permalink": "/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3,
+                "description": "Learn how to adapt Nav2 for humanoid robot navigation, focusing on path planning, costmaps, and localization for bipedal locomotion"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Chapter 2: Isaac ROS and Accelerated Perception",
+                "permalink": "/docs/module-3/chapter-2-isaac-ros-and-accelerated-perception"
+              },
+              "next": {
+                "title": "Module 3 Glossary: The AI-Robot Brain (NVIDIA Isaac™)",
+                "permalink": "/docs/module-3/glossary"
+              }
+            },
+            {
+              "id": "module-3/glossary",
+              "title": "Module 3 Glossary: The AI-Robot Brain (NVIDIA Isaac™)",
+              "description": "A",
+              "source": "@site/docs/module-3/glossary.md",
+              "sourceDirName": "module-3",
+              "slug": "/module-3/glossary",
+              "permalink": "/docs/module-3/glossary",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/glossary.md",
+              "tags": [],
+              "version": "current",
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Chapter 3: Navigation with Nav2 for Humanoid Robots",
+                "permalink": "/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots"
+              },
+              "next": {
+                "title": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing",
+                "permalink": "/docs/module-4/chapter-1-voice-to-action"
+              }
+            },
+            {
+              "id": "module-4/chapter-1-voice-to-action",
+              "title": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing",
+              "description": "Overview",
+              "source": "@site/docs/module-4/chapter-1-voice-to-action.md",
+              "sourceDirName": "module-4",
+              "slug": "/module-4/chapter-1-voice-to-action",
+              "permalink": "/docs/module-4/chapter-1-voice-to-action",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4/chapter-1-voice-to-action.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 3 Glossary: The AI-Robot Brain (NVIDIA Isaac™)",
+                "permalink": "/docs/module-3/glossary"
+              },
+              "next": {
+                "title": "Chapter 2: Cognitive Planning - Using LLMs for Natural Language Goal Conversion",
+                "permalink": "/docs/module-4/chapter-2-cognitive-planning"
+              }
+            },
+            {
+              "id": "module-4/chapter-2-cognitive-planning",
+              "title": "Chapter 2: Cognitive Planning - Using LLMs for Natural Language Goal Conversion",
+              "description": "Overview",
+              "source": "@site/docs/module-4/chapter-2-cognitive-planning.md",
+              "sourceDirName": "module-4",
+              "slug": "/module-4/chapter-2-cognitive-planning",
+              "permalink": "/docs/module-4/chapter-2-cognitive-planning",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4/chapter-2-cognitive-planning.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2,
+                "title": "Chapter 2: Cognitive Planning - Using LLMs for Natural Language Goal Conversion"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing",
+                "permalink": "/docs/module-4/chapter-1-voice-to-action"
+              },
+              "next": {
+                "title": "Chapter 3: Capstone - End-to-End Autonomous Humanoid Integration",
+                "permalink": "/docs/module-4/chapter-3-capstone-integration"
+              }
+            },
+            {
+              "id": "module-4/chapter-3-capstone-integration",
+              "title": "Chapter 3: Capstone - End-to-End Autonomous Humanoid Integration",
+              "description": "Overview",
+              "source": "@site/docs/module-4/chapter-3-capstone-integration.md",
+              "sourceDirName": "module-4",
+              "slug": "/module-4/chapter-3-capstone-integration",
+              "permalink": "/docs/module-4/chapter-3-capstone-integration",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4/chapter-3-capstone-integration.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3,
+                "title": "Chapter 3: Capstone - End-to-End Autonomous Humanoid Integration"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Chapter 2: Cognitive Planning - Using LLMs for Natural Language Goal Conversion",
+                "permalink": "/docs/module-4/chapter-2-cognitive-planning"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "Module 1 - The Robotic Nervous System (ROS 2)",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "module-1/chapter-1-ros2-architecture"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "module-1/chapter-2-python-agents-rclpy"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "module-1/chapter-3-urdf-humanoids"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Module 2 - The Digital Twin (Gazebo & Unity)",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "module-2/chapter-1-physics-simulation-with-gazebo"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "module-2/chapter-2-high-fidelity-interaction-with-unity"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "module-2/chapter-3-sensor-simulation-for-perception"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "module-2/glossary"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Module 3 - The AI-Robot Brain (NVIDIA Isaac™)",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "module-3/chapter-2-isaac-ros-and-accelerated-perception"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "module-3/chapter-3-navigation-with-nav2-for-humanoid-robots"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "module-3/glossary"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              },
+              {
+                "type": "category",
+                "label": "Module 4 - Vision-Language-Action (VLA)",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "module-4/chapter-1-voice-to-action"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "module-4/chapter-2-cognitive-planning"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "module-4/chapter-3-capstone-integration"
+                  }
+                ],
+                "collapsed": true,
+                "collapsible": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": "/blog/tags",
+      "blogTagsPaginated": []
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}

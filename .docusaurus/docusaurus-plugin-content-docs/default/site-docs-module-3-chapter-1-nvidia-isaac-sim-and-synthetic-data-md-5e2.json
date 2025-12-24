@@ -1,0 +1,28 @@
+{
+  "id": "module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
+  "title": "Chapter 1: NVIDIA Isaac Sim and Synthetic Data",
+  "description": "Learn how to use NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation for training perception models",
+  "source": "@site/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
+  "permalink": "/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "description": "Learn how to use NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation for training perception models"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Glossary",
+    "permalink": "/docs/module-2/glossary"
+  },
+  "next": {
+    "title": "Chapter 2: Isaac ROS and Accelerated Perception",
+    "permalink": "/docs/module-3/chapter-2-isaac-ros-and-accelerated-perception"
+  }
+}

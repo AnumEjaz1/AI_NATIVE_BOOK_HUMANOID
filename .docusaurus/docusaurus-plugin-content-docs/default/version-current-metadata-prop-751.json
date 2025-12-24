@@ -1,0 +1,243 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "Introduction",
+        "href": "/docs/intro",
+        "docId": "intro",
+        "unlisted": false
+      },
+      {
+        "type": "category",
+        "label": "Module 1 - The Robotic Nervous System (ROS 2)",
+        "items": [
+          {
+            "type": "link",
+            "label": "ROS 2 Architecture Fundamentals",
+            "href": "/docs/module-1/chapter-1-ros2-architecture",
+            "docId": "module-1/chapter-1-ros2-architecture",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Python Agents and Robot Control",
+            "href": "/docs/module-1/chapter-2-python-agents-rclpy",
+            "docId": "module-1/chapter-2-python-agents-rclpy",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Robot Modeling with URDF",
+            "href": "/docs/module-1/chapter-3-urdf-humanoids",
+            "docId": "module-1/chapter-3-urdf-humanoids",
+            "unlisted": false
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Module 2 - The Digital Twin (Gazebo & Unity)",
+        "items": [
+          {
+            "type": "link",
+            "label": "Physics Simulation with Gazebo",
+            "href": "/docs/module-2/chapter-1-physics-simulation-with-gazebo",
+            "docId": "module-2/chapter-1-physics-simulation-with-gazebo",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "High-Fidelity Interaction with Unity",
+            "href": "/docs/module-2/chapter-2-high-fidelity-interaction-with-unity",
+            "docId": "module-2/chapter-2-high-fidelity-interaction-with-unity",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Sensor Simulation for Perception",
+            "href": "/docs/module-2/chapter-3-sensor-simulation-for-perception",
+            "docId": "module-2/chapter-3-sensor-simulation-for-perception",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Glossary",
+            "href": "/docs/module-2/glossary",
+            "docId": "module-2/glossary",
+            "unlisted": false
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Module 3 - The AI-Robot Brain (NVIDIA Isaac™)",
+        "items": [
+          {
+            "type": "link",
+            "label": "Chapter 1: NVIDIA Isaac Sim and Synthetic Data",
+            "href": "/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
+            "docId": "module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Chapter 2: Isaac ROS and Accelerated Perception",
+            "href": "/docs/module-3/chapter-2-isaac-ros-and-accelerated-perception",
+            "docId": "module-3/chapter-2-isaac-ros-and-accelerated-perception",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Chapter 3: Navigation with Nav2 for Humanoid Robots",
+            "href": "/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots",
+            "docId": "module-3/chapter-3-navigation-with-nav2-for-humanoid-robots",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Module 3 Glossary: The AI-Robot Brain (NVIDIA Isaac™)",
+            "href": "/docs/module-3/glossary",
+            "docId": "module-3/glossary",
+            "unlisted": false
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      },
+      {
+        "type": "category",
+        "label": "Module 4 - Vision-Language-Action (VLA)",
+        "items": [
+          {
+            "type": "link",
+            "label": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing",
+            "href": "/docs/module-4/chapter-1-voice-to-action",
+            "docId": "module-4/chapter-1-voice-to-action",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Chapter 2: Cognitive Planning - Using LLMs for Natural Language Goal Conversion",
+            "href": "/docs/module-4/chapter-2-cognitive-planning",
+            "docId": "module-4/chapter-2-cognitive-planning",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "Chapter 3: Capstone - End-to-End Autonomous Humanoid Integration",
+            "href": "/docs/module-4/chapter-3-capstone-integration",
+            "docId": "module-4/chapter-3-capstone-integration",
+            "unlisted": false
+          }
+        ],
+        "collapsed": true,
+        "collapsible": true
+      }
+    ]
+  },
+  "docs": {
+    "intro": {
+      "id": "intro",
+      "title": "Introduction",
+      "description": "Welcome to the AI Native Book on Humanoid Robotics. This comprehensive guide covers the essential concepts of Physical AI and humanoid robotics, from foundational principles to advanced implementation techniques.",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-1/chapter-1-ros2-architecture": {
+      "id": "module-1/chapter-1-ros2-architecture",
+      "title": "ROS 2 Architecture Fundamentals",
+      "description": "This chapter covers the core concepts of ROS 2 architecture including nodes, topics, services, actions, and DDS concepts, explaining why ROS 2 is suited for real-time humanoid control.",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-1/chapter-2-python-agents-rclpy": {
+      "id": "module-1/chapter-2-python-agents-rclpy",
+      "title": "Python Agents and Robot Control",
+      "description": "This chapter demonstrates how to use rclpy to connect Python agents with ROS 2 controllers, explaining message flow, lifecycle nodes, and control abstraction.",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-1/chapter-3-urdf-humanoids": {
+      "id": "module-1/chapter-3-urdf-humanoids",
+      "title": "Robot Modeling with URDF",
+      "description": "This chapter provides clear explanations of URDF (Unified Robot Description Format) structure for humanoid robots, including links, joints, sensors, coordinate frames, and preparing models for simulation.",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-2/chapter-1-physics-simulation-with-gazebo": {
+      "id": "module-2/chapter-1-physics-simulation-with-gazebo",
+      "title": "Physics Simulation with Gazebo",
+      "description": "This chapter covers simulating gravity, collisions, joint dynamics, world files, and integrating ROS 2 with Gazebo for humanoid robots.",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-2/chapter-2-high-fidelity-interaction-with-unity": {
+      "id": "module-2/chapter-2-high-fidelity-interaction-with-unity",
+      "title": "High-Fidelity Interaction with Unity",
+      "description": "This chapter covers Unity as a digital twin environment, real-time rendering, humanoid interaction scenarios, and syncing simulation state with ROS 2.",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-2/chapter-3-sensor-simulation-for-perception": {
+      "id": "module-2/chapter-3-sensor-simulation-for-perception",
+      "title": "Sensor Simulation for Perception",
+      "description": "This chapter covers simulating LiDAR, depth cameras, and IMUs, sensor noise models, data streams, and preparing perception inputs for AI pipelines.",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-2/glossary": {
+      "id": "module-2/glossary",
+      "title": "Glossary",
+      "description": "This glossary defines key terms used throughout the Digital Twin Simulation Module (Module 2).",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data": {
+      "id": "module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
+      "title": "Chapter 1: NVIDIA Isaac Sim and Synthetic Data",
+      "description": "Learn how to use NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation for training perception models",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-3/chapter-2-isaac-ros-and-accelerated-perception": {
+      "id": "module-3/chapter-2-isaac-ros-and-accelerated-perception",
+      "title": "Chapter 2: Isaac ROS and Accelerated Perception",
+      "description": "Learn how to use Isaac ROS for hardware-accelerated Visual SLAM (VSLAM) and perception pipelines with ROS 2 integration",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-3/chapter-3-navigation-with-nav2-for-humanoid-robots": {
+      "id": "module-3/chapter-3-navigation-with-nav2-for-humanoid-robots",
+      "title": "Chapter 3: Navigation with Nav2 for Humanoid Robots",
+      "description": "Learn how to adapt Nav2 for humanoid robot navigation, focusing on path planning, costmaps, and localization for bipedal locomotion",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-3/glossary": {
+      "id": "module-3/glossary",
+      "title": "Module 3 Glossary: The AI-Robot Brain (NVIDIA Isaac™)",
+      "description": "A",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-4/chapter-1-voice-to-action": {
+      "id": "module-4/chapter-1-voice-to-action",
+      "title": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing",
+      "description": "Overview",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-4/chapter-2-cognitive-planning": {
+      "id": "module-4/chapter-2-cognitive-planning",
+      "title": "Chapter 2: Cognitive Planning - Using LLMs for Natural Language Goal Conversion",
+      "description": "Overview",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-4/chapter-3-capstone-integration": {
+      "id": "module-4/chapter-3-capstone-integration",
+      "title": "Chapter 3: Capstone - End-to-End Autonomous Humanoid Integration",
+      "description": "Overview",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

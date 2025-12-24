@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Isaac Sim Synthetic Data Generation Example -->
+  <!-- This launch file demonstrates how to configure Isaac Sim for synthetic data generation -->
+
+  <arg name="scene_name" default="basic_scene"/>
+  <arg name="output_dir" default="$(find-pkg-share my_robot_description)/synthetic_data"/>
+  <arg name="num_samples" default="1000"/>
+
+  <!-- Isaac Sim node -->
+  <node pkg="omni.isaac.robothub" exec="robothub_publisher" name="robothub_publisher">
+    <param name="publish_frequency" value="30"/>
+  </node>
+
+  <!-- Synthetic data capture node -->
+  <node pkg="isaac_ros_synthetic_data" exec="synthetic_data_capture" name="synthetic_data_capture">
+    <param name="output_directory" value="$(var output_dir)"/>
+    <param name="scene_name" value="$(var scene_name)"/>
+    <param name="num_samples" value="$(var num_samples)"/>
+    <param name="enable_domain_randomization" value="true"/>
+    <param name="enable_rgb_capture" value="true"/>
+    <param name="enable_depth_capture" value="true"/>
+    <param name="enable_segmentation_capture" value="true"/>
+  </node>
+
+  <!-- Domain randomization node -->
+  <node pkg="isaac_ros_synthetic_data" exec="domain_randomizer" name="domain_randomizer">
+    <param name="light_intensity_range" value="[100, 1000]"/>
+    <param name="light_color_range" value="[[0.8, 0.8, 1.0], [1.0, 0.8, 0.8]]"/>
+    <param name="material_roughness_range" value="[0.1, 0.9]"/>
+    <param name="material_metallic_range" value="[0.0, 0.5]"/>
+  </node>
+</launch>

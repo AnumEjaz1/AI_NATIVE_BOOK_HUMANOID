@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Isaac ROS Perception Pipeline Example -->
+  <!-- This launch file demonstrates how to configure Isaac ROS for perception -->
+
+  <!-- Isaac ROS Visual SLAM node -->
+  <node pkg="isaac_ros_visual_slam" exec="visual_slam_node" name="visual_slam_node">
+    <param name="enable_rectified_pose" value="true"/>
+    <param name="map_frame" value="map"/>
+    <param name="odom_frame" value="odom"/>
+    <param name="base_frame" value="base_link"/>
+    <param name="publish_odom_tf" value="true"/>
+    <param name="max_num_landmarks" value="1000"/>
+    <param name="min_num_landmarks" value="100"/>
+  </node>
+
+  <!-- Isaac ROS DNN Inference node -->
+  <node pkg="isaac_ros_dnn_inference" exec="dnn_inference" name="dnn_inference">
+    <param name="engine_file_path" value="path/to/tensorrt/engine.plan"/>
+    <param name="input_tensor_names" value="['input']"/>
+    <param name="output_tensor_names" value="['output']"/>
+    <param name="input_binding_names" value="['input']"/>
+    <param name="output_binding_names" value="['output']"/>
+    <param name="confidence_threshold" value="0.5"/>
+  </node>
+
+  <!-- Isaac ROS Image Pipeline nodes -->
+  <node pkg="isaac_ros_image_pipeline" exec="image_rect" name="image_rect">
+    <param name="image_width" value="640"/>
+    <param name="image_height" value="480"/>
+  </node>
+
+  <!-- Isaac ROS Depth Image Processing node -->
+  <node pkg="isaac_ros_depth_image_proc" exec="depth_image_proc" name="depth_image_proc">
+    <param name="input_width" value="640"/>
+    <param name="input_height" value="480"/>
+    <param name="output_width" value="640"/>
+    <param name="output_height" value="480"/>
+  </node>
+</launch>

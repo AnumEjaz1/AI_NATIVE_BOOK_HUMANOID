@@ -1,0 +1,28 @@
+{
+  "id": "module-3/chapter-3-navigation-with-nav2-for-humanoid-robots",
+  "title": "Chapter 3: Navigation with Nav2 for Humanoid Robots",
+  "description": "Learn how to adapt Nav2 for humanoid robot navigation, focusing on path planning, costmaps, and localization for bipedal locomotion",
+  "source": "@site/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots.md",
+  "sourceDirName": "module-3",
+  "slug": "/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots",
+  "permalink": "/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "description": "Learn how to adapt Nav2 for humanoid robot navigation, focusing on path planning, costmaps, and localization for bipedal locomotion"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Chapter 2: Isaac ROS and Accelerated Perception",
+    "permalink": "/docs/module-3/chapter-2-isaac-ros-and-accelerated-perception"
+  },
+  "next": {
+    "title": "Module 3 Glossary: The AI-Robot Brain (NVIDIA Isaac™)",
+    "permalink": "/docs/module-3/glossary"
+  }
+}
