@@ -4,19 +4,25 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '217'),
+    component: ComponentCreator('/docs', 'd2f'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'b5e'),
+        component: ComponentCreator('/docs', '3bf'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '7fe'),
+            component: ComponentCreator('/docs', 'd19'),
             routes: [
               {
                 path: '/docs/intro',
                 component: ComponentCreator('/docs/intro', 'aed'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/module-1/',
+                component: ComponentCreator('/docs/module-1/', '242'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -35,6 +41,12 @@ export default [
               {
                 path: '/docs/module-1/chapter-3-urdf-humanoids',
                 component: ComponentCreator('/docs/module-1/chapter-3-urdf-humanoids', 'bac'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/module-2/',
+                component: ComponentCreator('/docs/module-2/', '86e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -63,6 +75,12 @@ export default [
                 sidebar: "tutorialSidebar"
               },
               {
+                path: '/docs/module-3/',
+                component: ComponentCreator('/docs/module-3/', 'ad0'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
                 path: '/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data',
                 component: ComponentCreator('/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data', 'c87'),
                 exact: true,
@@ -83,6 +101,12 @@ export default [
               {
                 path: '/docs/module-3/glossary',
                 component: ComponentCreator('/docs/module-3/glossary', 'a21'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/module-4/',
+                component: ComponentCreator('/docs/module-4/', 'b23'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },

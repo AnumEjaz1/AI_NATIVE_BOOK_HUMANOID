@@ -21,8 +21,8 @@
           "docs": [
             {
               "id": "intro",
-              "title": "Introduction",
-              "description": "Welcome to the AI Native Book on Humanoid Robotics. This comprehensive guide covers the essential concepts of Physical AI and humanoid robotics, from foundational principles to advanced implementation techniques.",
+              "title": "🤖 AI Native Book on Humanoid Robotics",
+              "description": "Comprehensive Guide to Physical AI and Humanoid Robotics",
               "source": "@site/docs/intro.md",
               "sourceDirName": ".",
               "slug": "/intro",
@@ -32,20 +32,23 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 1,
               "frontMatter": {
                 "sidebar_position": 1
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "ROS 2 Architecture Fundamentals",
+                "title": "🤖 ROS 2 Architecture Fundamentals",
                 "permalink": "/docs/module-1/chapter-1-ros2-architecture"
               }
             },
             {
               "id": "module-1/chapter-1-ros2-architecture",
-              "title": "ROS 2 Architecture Fundamentals",
-              "description": "This chapter covers the core concepts of ROS 2 architecture including nodes, topics, services, actions, and DDS concepts, explaining why ROS 2 is suited for real-time humanoid control.",
+              "title": "🤖 ROS 2 Architecture Fundamentals",
+              "description": "Core Concepts: Nodes • Topics • Services • Actions • DDS",
               "source": "@site/docs/module-1/chapter-1-ros2-architecture.md",
               "sourceDirName": "module-1",
               "slug": "/module-1/chapter-1-ros2-architecture",
@@ -55,13 +58,16 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1/chapter-1-ros2-architecture.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 1,
               "frontMatter": {
                 "sidebar_position": 1
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Introduction",
+                "title": "🤖 AI Native Book on Humanoid Robotics",
                 "permalink": "/docs/intro"
               },
               "next": {
@@ -82,13 +88,16 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1/chapter-2-python-agents-rclpy.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 2,
               "frontMatter": {
                 "sidebar_position": 2
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "ROS 2 Architecture Fundamentals",
+                "title": "🤖 ROS 2 Architecture Fundamentals",
                 "permalink": "/docs/module-1/chapter-1-ros2-architecture"
               },
               "next": {
@@ -109,6 +118,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1/chapter-3-urdf-humanoids.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 3,
               "frontMatter": {
                 "sidebar_position": 3
@@ -124,6 +136,27 @@
               }
             },
             {
+              "id": "module-1/index",
+              "title": "🤖 Module 1: The Robotic Nervous System (ROS 2)",
+              "description": "Foundation of Humanoid Robotics",
+              "source": "@site/docs/module-1/index.md",
+              "sourceDirName": "module-1",
+              "slug": "/module-1/",
+              "permalink": "/docs/module-1/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1/index.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "sidebar_position": 0
+              }
+            },
+            {
               "id": "module-2/chapter-1-physics-simulation-with-gazebo",
               "title": "Physics Simulation with Gazebo",
               "description": "This chapter covers simulating gravity, collisions, joint dynamics, world files, and integrating ROS 2 with Gazebo for humanoid robots.",
@@ -136,6 +169,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/chapter-1-physics-simulation-with-gazebo.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 1,
               "frontMatter": {
                 "title": "Physics Simulation with Gazebo",
@@ -164,6 +200,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/chapter-2-high-fidelity-interaction-with-unity.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 2,
               "frontMatter": {
                 "title": "High-Fidelity Interaction with Unity",
@@ -192,6 +231,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/chapter-3-sensor-simulation-for-perception.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 3,
               "frontMatter": {
                 "title": "Sensor Simulation for Perception",
@@ -220,6 +262,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/glossary.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 4,
               "frontMatter": {
                 "title": "Glossary",
@@ -236,6 +281,27 @@
               }
             },
             {
+              "id": "module-2/index",
+              "title": "🌐 Module 2: The Digital Twin (Gazebo & Unity)",
+              "description": "Physics Simulation & High-Fidelity Interaction",
+              "source": "@site/docs/module-2/index.md",
+              "sourceDirName": "module-2",
+              "slug": "/module-2/",
+              "permalink": "/docs/module-2/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-2/index.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "sidebar_position": 0
+              }
+            },
+            {
               "id": "module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
               "title": "Chapter 1: NVIDIA Isaac Sim and Synthetic Data",
               "description": "Learn how to use NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation for training perception models",
@@ -248,6 +314,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 1,
               "frontMatter": {
                 "sidebar_position": 1,
@@ -276,6 +345,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/chapter-2-isaac-ros-and-accelerated-perception.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 2,
               "frontMatter": {
                 "sidebar_position": 2,
@@ -304,6 +376,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 3,
               "frontMatter": {
                 "sidebar_position": 3,
@@ -332,6 +407,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/glossary.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "frontMatter": {},
               "sidebar": "tutorialSidebar",
               "previous": {
@@ -341,6 +419,27 @@
               "next": {
                 "title": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing",
                 "permalink": "/docs/module-4/chapter-1-voice-to-action"
+              }
+            },
+            {
+              "id": "module-3/index",
+              "title": "🧠 Module 3: The AI-Robot Brain (NVIDIA Isaac™)",
+              "description": "Advanced Perception & Navigation Systems",
+              "source": "@site/docs/module-3/index.md",
+              "sourceDirName": "module-3",
+              "slug": "/module-3/",
+              "permalink": "/docs/module-3/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-3/index.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "sidebar_position": 0
               }
             },
             {
@@ -356,6 +455,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4/chapter-1-voice-to-action.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 1,
               "frontMatter": {
                 "sidebar_position": 1,
@@ -384,6 +486,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4/chapter-2-cognitive-planning.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 2,
               "frontMatter": {
                 "sidebar_position": 2,
@@ -412,6 +517,9 @@
               "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4/chapter-3-capstone-integration.md",
               "tags": [],
               "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
               "sidebarPosition": 3,
               "frontMatter": {
                 "sidebar_position": 3,
@@ -421,6 +529,27 @@
               "previous": {
                 "title": "Chapter 2: Cognitive Planning - Using LLMs for Natural Language Goal Conversion",
                 "permalink": "/docs/module-4/chapter-2-cognitive-planning"
+              }
+            },
+            {
+              "id": "module-4/index",
+              "title": "🗣️ Module 4: Vision-Language-Action (VLA)",
+              "description": "Integrated Perception, Reasoning & Control",
+              "source": "@site/docs/module-4/index.md",
+              "sourceDirName": "module-4",
+              "slug": "/module-4/",
+              "permalink": "/docs/module-4/",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-4/index.md",
+              "tags": [],
+              "version": "current",
+              "lastUpdatedBy": "Author",
+              "lastUpdatedAt": 1539502055,
+              "formattedLastUpdatedAt": "Oct 14, 2018",
+              "sidebarPosition": 0,
+              "frontMatter": {
+                "sidebar_position": 0
               }
             }
           ],
@@ -448,7 +577,7 @@
                     "id": "module-1/chapter-3-urdf-humanoids"
                   }
                 ],
-                "collapsed": true,
+                "collapsed": false,
                 "collapsible": true
               },
               {
@@ -472,7 +601,7 @@
                     "id": "module-2/glossary"
                   }
                 ],
-                "collapsed": true,
+                "collapsed": false,
                 "collapsible": true
               },
               {
@@ -496,7 +625,7 @@
                     "id": "module-3/glossary"
                   }
                 ],
-                "collapsed": true,
+                "collapsed": false,
                 "collapsible": true
               },
               {
@@ -516,7 +645,7 @@
                     "id": "module-4/chapter-3-capstone-integration"
                   }
                 ],
-                "collapsed": true,
+                "collapsed": false,
                 "collapsible": true
               }
             ]

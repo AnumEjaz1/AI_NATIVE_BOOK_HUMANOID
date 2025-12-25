@@ -1,8 +1,8 @@
-# Specification Quality Checklist: Digital Twin Simulation for Physical AI Book
+# Specification Quality Checklist: UI/UX Improvement for Technical Textbook
 
 **Purpose**: Validate specification completeness and quality before proceeding to planning
 **Created**: 2025-12-25
-**Feature**: [Link to spec.md](specs/001-digital-twin-simulation/spec.md)
+**Feature**: [Link to spec.md](../specs/1-ui-ux-improvement/spec.md)
 
 ## Content Quality
 
@@ -31,4 +31,4 @@
 
 ## Notes
 
-- All checklist items have been completed and validated
+- All items have been validated and the specification is ready for planning phase

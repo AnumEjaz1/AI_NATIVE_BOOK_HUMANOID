@@ -5,6 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Module 1: ROS 2 (Robotic Nervous System)',
+    chapters: 3,
     description: (
       <>
         Learn ROS 2 fundamentals including nodes, topics, services, and actions.
@@ -15,6 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Module 2: Digital Twin (Gazebo & Unity)',
+    chapters: 4,
     description: (
       <>
         Master physics simulation with Gazebo, including gravity, collisions, and joint dynamics.
@@ -25,6 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Module 3: AI-Robot Brain (Isaac & Nav2)',
+    chapters: 4,
     description: (
       <>
         Explore NVIDIA Isaac for accelerated perception and synthetic data generation.
@@ -35,6 +38,7 @@ const FeatureList = [
   },
   {
     title: 'Module 4: Vision-Language-Action (VLA)',
+    chapters: 3,
     description: (
       <>
         Combine voice, vision, and control for natural human-robot interaction.
@@ -45,10 +49,13 @@ const FeatureList = [
   },
 ];
 
-function Feature({title, description}) {
+function Feature({title, description, chapters}) {
   return (
     <div className={clsx('col col--3')}>
       <div className="text--center padding-horiz--md">
+        <div className={styles.chapterBadge}>
+          {chapters} chapters
+        </div>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

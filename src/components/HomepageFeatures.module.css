@@ -1,19 +1,19 @@
 .features {
   display: flex;
   align-items: stretch;
-  padding: 3.5rem 0;
+  padding: 5rem 0;
   width: 100%;
   background-color: var(--ifm-background-color);
 }
 
 .features .container {
-  max-width: 1250px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
 .features .row {
-  gap: 2.5rem;
+  gap: 2rem;
   justify-content: center;
 }
 
@@ -39,20 +39,21 @@
 
 .features .text--center {
   text-align: left !important;
-  padding: 0 1.2rem;
+  padding: 0 1.5rem;
 }
 
 /* Module card styling */
 .features .text--center.padding-horiz--md {
-  background: var(--ifm-background-surface-color);
-  border: 1px solid var(--ifm-color-emphasis-200);
-  border-radius: 14px;
-  padding: 2.8rem 1.8rem !important;
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem 2rem !important;
   height: 100%;
-  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  border: 1px solid var(--ifm-color-emphasis-200);
   position: relative;
   overflow: hidden;
 }
@@ -63,60 +64,66 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--ifm-color-primary), var(--ifm-color-primary-light));
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  height: 4px;
+  background: linear-gradient(90deg, var(--ifm-color-primary), #3b82f6);
 }
 
 .features .text--center.padding-horiz--md:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(0,0,0, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
   border-color: var(--ifm-color-primary-light);
-}
-
-.features .text--center.padding-horiz--md:hover::before {
-  opacity: 1;
 }
 
 /* Module title styling */
 .features h3 {
   color: var(--ifm-color-primary);
-  font-size: 1.45rem;
-  margin-bottom: 1.1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
   line-height: 1.4;
-  font-weight: 600;
-  padding: 0 0.6rem;
+  font-weight: 700;
+  padding: 0.5rem 0.75rem 0;
   position: relative;
 }
 
-.features h3::after {
-  content: '';
-  position: absolute;
-  bottom: -0.3rem;
-  left: 0;
-  width: 40px;
-  height: 2px;
-  background: var(--ifm-color-primary);
-  border-radius: 1px;
-  opacity: 0.6;
+/* Chapter badge styling */
+.chapterBadge {
+  display: inline-block;
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darker);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
+  margin-left: 0.75rem;
+  border: 1px solid var(--ifm-color-primary-lighter);
+}
+
+/* Dark mode for chapter badge */
+[data-theme='dark'] .chapterBadge {
+  background: #2563eb30;
+  color: var(--ifm-color-primary-lighter);
+  border-color: #2563eb50;
 }
 
 /* Module description styling */
 .features p {
-  color: var(--ifm-color-emphasis-600);
+  color: var(--ifm-color-emphasis-700);
   line-height: 1.7;
   margin-bottom: 0;
-  font-size: 1.05rem;
-  padding: 0 0.6rem;
+  font-size: 1.125rem;
+  padding: 0 0.75rem 1.5rem;
   flex: 1;
   position: relative;
 }
 
 /* Dark mode adjustments */
 [data-theme='dark'] .features .text--center.padding-horiz--md {
-  background: var(--ifm-color-emphasis-level-100);
-  border-color: var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-500);
 }
 
 [data-theme='dark'] .features .text--center.padding-horiz--md:hover {
@@ -124,11 +131,11 @@
 }
 
 [data-theme='dark'] .features h3 {
-  color: var(--ifm-color-primary-lighter);
+  color: var(--ifm-color-primary-light);
 }
 
 [data-theme='dark'] .features p {
-  color: var(--ifm-color-emphasis-300);
+  color: var(--ifm-color-emphasis-200);
 }
 
 /* Remove the featureSvg class since it's not used in this context */

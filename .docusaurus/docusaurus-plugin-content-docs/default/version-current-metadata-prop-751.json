@@ -11,7 +11,7 @@
     "tutorialSidebar": [
       {
         "type": "link",
-        "label": "Introduction",
+        "label": "🤖 AI Native Book on Humanoid Robotics",
         "href": "/docs/intro",
         "docId": "intro",
         "unlisted": false
@@ -22,7 +22,14 @@
         "items": [
           {
             "type": "link",
-            "label": "ROS 2 Architecture Fundamentals",
+            "label": "🤖 Module 1: The Robotic Nervous System (ROS 2)",
+            "href": "/docs/module-1/",
+            "docId": "module-1/index",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "🤖 ROS 2 Architecture Fundamentals",
             "href": "/docs/module-1/chapter-1-ros2-architecture",
             "docId": "module-1/chapter-1-ros2-architecture",
             "unlisted": false
@@ -42,13 +49,20 @@
             "unlisted": false
           }
         ],
-        "collapsed": true,
+        "collapsed": false,
         "collapsible": true
       },
       {
         "type": "category",
         "label": "Module 2 - The Digital Twin (Gazebo & Unity)",
         "items": [
+          {
+            "type": "link",
+            "label": "🌐 Module 2: The Digital Twin (Gazebo & Unity)",
+            "href": "/docs/module-2/",
+            "docId": "module-2/index",
+            "unlisted": false
+          },
           {
             "type": "link",
             "label": "Physics Simulation with Gazebo",
@@ -78,13 +92,20 @@
             "unlisted": false
           }
         ],
-        "collapsed": true,
+        "collapsed": false,
         "collapsible": true
       },
       {
         "type": "category",
         "label": "Module 3 - The AI-Robot Brain (NVIDIA Isaac™)",
         "items": [
+          {
+            "type": "link",
+            "label": "🧠 Module 3: The AI-Robot Brain (NVIDIA Isaac™)",
+            "href": "/docs/module-3/",
+            "docId": "module-3/index",
+            "unlisted": false
+          },
           {
             "type": "link",
             "label": "Chapter 1: NVIDIA Isaac Sim and Synthetic Data",
@@ -114,13 +135,20 @@
             "unlisted": false
           }
         ],
-        "collapsed": true,
+        "collapsed": false,
         "collapsible": true
       },
       {
         "type": "category",
         "label": "Module 4 - Vision-Language-Action (VLA)",
         "items": [
+          {
+            "type": "link",
+            "label": "🗣️ Module 4: Vision-Language-Action (VLA)",
+            "href": "/docs/module-4/",
+            "docId": "module-4/index",
+            "unlisted": false
+          },
           {
             "type": "link",
             "label": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing",
@@ -143,7 +171,7 @@
             "unlisted": false
           }
         ],
-        "collapsed": true,
+        "collapsed": false,
         "collapsible": true
       }
     ]
@@ -151,14 +179,14 @@
   "docs": {
     "intro": {
       "id": "intro",
-      "title": "Introduction",
-      "description": "Welcome to the AI Native Book on Humanoid Robotics. This comprehensive guide covers the essential concepts of Physical AI and humanoid robotics, from foundational principles to advanced implementation techniques.",
+      "title": "🤖 AI Native Book on Humanoid Robotics",
+      "description": "Comprehensive Guide to Physical AI and Humanoid Robotics",
       "sidebar": "tutorialSidebar"
     },
     "module-1/chapter-1-ros2-architecture": {
       "id": "module-1/chapter-1-ros2-architecture",
-      "title": "ROS 2 Architecture Fundamentals",
-      "description": "This chapter covers the core concepts of ROS 2 architecture including nodes, topics, services, actions, and DDS concepts, explaining why ROS 2 is suited for real-time humanoid control.",
+      "title": "🤖 ROS 2 Architecture Fundamentals",
+      "description": "Core Concepts: Nodes • Topics • Services • Actions • DDS",
       "sidebar": "tutorialSidebar"
     },
     "module-1/chapter-2-python-agents-rclpy": {
@@ -171,6 +199,12 @@
       "id": "module-1/chapter-3-urdf-humanoids",
       "title": "Robot Modeling with URDF",
       "description": "This chapter provides clear explanations of URDF (Unified Robot Description Format) structure for humanoid robots, including links, joints, sensors, coordinate frames, and preparing models for simulation.",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-1/index": {
+      "id": "module-1/index",
+      "title": "🤖 Module 1: The Robotic Nervous System (ROS 2)",
+      "description": "Foundation of Humanoid Robotics",
       "sidebar": "tutorialSidebar"
     },
     "module-2/chapter-1-physics-simulation-with-gazebo": {
@@ -197,6 +231,12 @@
       "description": "This glossary defines key terms used throughout the Digital Twin Simulation Module (Module 2).",
       "sidebar": "tutorialSidebar"
     },
+    "module-2/index": {
+      "id": "module-2/index",
+      "title": "🌐 Module 2: The Digital Twin (Gazebo & Unity)",
+      "description": "Physics Simulation & High-Fidelity Interaction",
+      "sidebar": "tutorialSidebar"
+    },
     "module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data": {
       "id": "module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data",
       "title": "Chapter 1: NVIDIA Isaac Sim and Synthetic Data",
@@ -221,6 +261,12 @@
       "description": "A",
       "sidebar": "tutorialSidebar"
     },
+    "module-3/index": {
+      "id": "module-3/index",
+      "title": "🧠 Module 3: The AI-Robot Brain (NVIDIA Isaac™)",
+      "description": "Advanced Perception & Navigation Systems",
+      "sidebar": "tutorialSidebar"
+    },
     "module-4/chapter-1-voice-to-action": {
       "id": "module-4/chapter-1-voice-to-action",
       "title": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing",
@@ -237,6 +283,12 @@
       "id": "module-4/chapter-3-capstone-integration",
       "title": "Chapter 3: Capstone - End-to-End Autonomous Humanoid Integration",
       "description": "Overview",
+      "sidebar": "tutorialSidebar"
+    },
+    "module-4/index": {
+      "id": "module-4/index",
+      "title": "🗣️ Module 4: Vision-Language-Action (VLA)",
+      "description": "Integrated Perception, Reasoning & Control",
       "sidebar": "tutorialSidebar"
     }
   }
