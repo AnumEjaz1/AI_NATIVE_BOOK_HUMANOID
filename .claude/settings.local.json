@@ -1,37 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git fetch --all --prune)",
-      "Bash(mkdir -p specs/001-ros2-nervous-system)",
-      "Bash(mkdir -p specs/001-ros2-nervous-system/checklists)",
-      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)",
-      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json)",
-      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks)",
-      "Bash(git rev-parse --git-dir)",
-      "Bash(node --version)",
-      "Bash(npm --version)",
-      "Bash(mkdir -p docs/module-1)",
-      "Bash(mkdir -p src/css)",
-      "Bash(mkdir -p img)",
-      "Bash(npm install)",
-      "Bash(npx docusaurus --version)",
-      "Bash(npx docusaurus build)",
-      "Bash(mkdir -p src/pages)",
-      "Bash(npx docusaurus start)",
-      "Bash(timeout 10 npx docusaurus start --no-open)",
-      "Bash(mkdir -p static/img)",
-      "Bash(.specify/scripts/powershell/create-new-feature.ps1 -Json \"/sp.specify\n\nModule: Module 2 – The Digital Twin \\(Gazebo & Unity\\)\n\nPurpose:\nSpecify and author Module 2 of the Physical AI book, focusing on building a digital twin of a humanoid robot using simulation environments. This module enables safe, physics-accurate testing and human–robot interaction before real-world deployment.\n\nTarget audience:\nAdvanced students, developers, and educators with prior exposure to ROS 2 fundamentals \\(Module 1\\).\n\nModule scope:\nThis module contains exactly 3 chapters and is written for Docusaurus in Markdown, aligned with Spec-Kit Plus workflows.\n\nChapter breakdown:\n- Chapter 1: Physics Simulation with Gazebo  \n  Focus on simulating gravity, collisions, joint dynamics, world files, and integrating ROS 2 with Gazebo for humanoid robots.\n\n- Chapter 2: High-Fidelity Interaction with Unity  \n  Focus on Unity as a digital twin environment, real-time rendering, humanoid interaction scenarios, and syncing simulation state with ROS 2.\n\n- Chapter 3: Sensor Simulation for Perception  \n  Focus on simulating LiDAR, depth cameras, and IMUs, sensor noise models, data streams, and preparing perception inputs for AI pipelines.\n\nKey standards:\n- All simulation concepts must align with official Gazebo, Unity, and ROS 2 documentation\n- Clear distinction between physics accuracy and visual fidelity\n- Explanations must connect simulation outputs to downstream AI modules\n- Terminology must remain consistent with Module 1\n\nConstraints:\n- Markdown only, Docusaurus-ready\n- No NVIDIA Isaac or Nav2 internals \\(reserved for Module 3\\)\n- No hardware deployment instructions\n- No unresolved TODOs or speculative claims\n\nSuccess criteria:\n- Reader can explain the role of a digital twin in Physical AI\n- Reader understands how physics and sensors are simulated\n- Reader can reason about Gazebo vs Unity use cases\n- Module prepares learners for perception, training, and navigation in Module 3\n\nNot building:\n- Full game-engine tutorials\n- Performance benchmarking across simulators\n- Custom physics engine development\" -Json -Number 1 -ShortName \"digital-twin-simulation\")",
-      "Bash(.specify/scripts/bash/create-new-feature.sh --json --number 1 --short-name \"digital-twin-simulation\" \"/sp.specify\n\nModule: Module 2 – The Digital Twin \\(Gazebo & Unity\\)\n\nPurpose:\nSpecify and author Module 2 of the Physical AI book, focusing on building a digital twin of a humanoid robot using simulation environments. This module enables safe, physics-accurate testing and human–robot interaction before real-world deployment.\n\nTarget audience:\nAdvanced students, developers, and educators with prior exposure to ROS 2 fundamentals \\(Module 1\\).\n\nModule scope:\nThis module contains exactly 3 chapters and is written for Docusaurus in Markdown, aligned with Spec-Kit Plus workflows.\n\nChapter breakdown:\n- Chapter 1: Physics Simulation with Gazebo  \n  Focus on simulating gravity, collisions, joint dynamics, world files, and integrating ROS 2 with Gazebo for humanoid robots.\n\n- Chapter 2: High-Fidelity Interaction with Unity  \n  Focus on Unity as a digital twin environment, real-time rendering, humanoid interaction scenarios, and syncing simulation state with ROS 2.\n\n- Chapter 3: Sensor Simulation for Perception  \n  Focus on simulating LiDAR, depth cameras, and IMUs, sensor noise models, data streams, and preparing perception inputs for AI pipelines.\n\nKey standards:\n- All simulation concepts must align with official Gazebo, Unity, and ROS 2 documentation\n- Clear distinction between physics accuracy and visual fidelity\n- Explanations must connect simulation outputs to downstream AI modules\n- Terminology must remain consistent with Module 1\n\nConstraints:\n- Markdown only, Docusaurus-ready\n- No NVIDIA Isaac or Nav2 internals \\(reserved for Module 3\\)\n- No hardware deployment instructions\n- No unresolved TODOs or speculative claims\n\nSuccess criteria:\n- Reader can explain the role of a digital twin in Physical AI\n- Reader understands how physics and sensors are simulated\n- Reader can reason about Gazebo vs Unity use cases\n- Module prepares learners for perception, training, and navigation in Module 3\n\nNot building:\n- Full game-engine tutorials\n- Performance benchmarking across simulators\n- Custom physics engine development\")",
-      "Bash(mkdir -p specs/001-digital-twin-simulation)",
-      "Bash(mkdir -p specs/001-digital-twin-simulation/checklists)",
-      "Bash(mkdir -p history/prompts/digital-twin-simulation)",
-      "Bash(mkdir -p specs/001-digital-twin-simulation/contracts)",
-      "Bash(mkdir -p specs/001-ai-robot-brain-isaac)",
-      "Skill(sp.plan)",
-      "Bash(npm run build)",
-      "Skill(sp.phr)",
-      "Bash(dir \"C:\\\\Users\\\\FUJITSU\\\\OneDrive\\\\Desktop\\\\hackathon\\\\AI_NATIVE_BOOK_HUMANOID\\\\docs\\\\module-3\" /s)",
-      "Bash(dir specs /ad /b)"
+      "Bash(npm run build)"
     ]
   }
 }

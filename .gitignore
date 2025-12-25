@@ -53,3 +53,34 @@ Thumbs.db
 
 # Local configuration
 local/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.ENV
+.ENV.*
+.venv.bak/
+env.bak/
+*.env*
+.env
+.env.local
+.env.dev
+.env.test
+.env.prod
+.env.staging
+.env.backup
+.env.backup.*
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+nox/
+.pyre/
+.mypy_cache/

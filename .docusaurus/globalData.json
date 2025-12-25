@@ -31,6 +31,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "module-1/index",
+              "path": "/docs/module-1/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "module-2/chapter-1-physics-simulation-with-gazebo",
               "path": "/docs/module-2/chapter-1-physics-simulation-with-gazebo",
               "sidebar": "tutorialSidebar"
@@ -48,6 +53,11 @@
             {
               "id": "module-2/glossary",
               "path": "/docs/module-2/glossary",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-2/index",
+              "path": "/docs/module-2/",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -71,6 +81,11 @@
               "sidebar": "tutorialSidebar"
             },
             {
+              "id": "module-3/index",
+              "path": "/docs/module-3/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "module-4/chapter-1-voice-to-action",
               "path": "/docs/module-4/chapter-1-voice-to-action",
               "sidebar": "tutorialSidebar"
@@ -83,6 +98,11 @@
             {
               "id": "module-4/chapter-3-capstone-integration",
               "path": "/docs/module-4/chapter-3-capstone-integration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "module-4/index",
+              "path": "/docs/module-4/",
               "sidebar": "tutorialSidebar"
             }
           ],

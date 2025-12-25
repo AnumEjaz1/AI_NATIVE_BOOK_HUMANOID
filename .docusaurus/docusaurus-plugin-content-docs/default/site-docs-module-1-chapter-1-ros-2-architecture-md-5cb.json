@@ -1,7 +1,7 @@
 {
   "id": "module-1/chapter-1-ros2-architecture",
-  "title": "ROS 2 Architecture Fundamentals",
-  "description": "This chapter covers the core concepts of ROS 2 architecture including nodes, topics, services, actions, and DDS concepts, explaining why ROS 2 is suited for real-time humanoid control.",
+  "title": "🤖 ROS 2 Architecture Fundamentals",
+  "description": "Core Concepts: Nodes • Topics • Services • Actions • DDS",
   "source": "@site/docs/module-1/chapter-1-ros2-architecture.md",
   "sourceDirName": "module-1",
   "slug": "/module-1/chapter-1-ros2-architecture",
@@ -11,14 +11,17 @@
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/module-1/chapter-1-ros2-architecture.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedBy": "Anum Ejaz",
+  "lastUpdatedAt": 1766609913,
+  "formattedLastUpdatedAt": "Dec 24, 2025",
   "sidebarPosition": 1,
   "frontMatter": {
     "sidebar_position": 1
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "Introduction",
-    "permalink": "/docs/intro"
+    "title": "🤖 Module 1: The Robotic Nervous System (ROS 2)",
+    "permalink": "/docs/module-1/"
   },
   "next": {
     "title": "Python Agents and Robot Control",
