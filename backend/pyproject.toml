@@ -1,0 +1,18 @@
+[project]
+name = "rag-ingestion"
+version = "0.1.0"
+description = "RAG Website URL Ingestion, Embedding Generation, and Vector Storage"
+authors = ["AI Engineer"]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "cohere>=4.0.0",
+    "qdrant-client>=1.7.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

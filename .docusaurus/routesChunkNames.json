@@ -1,98 +1,141 @@
 {
-  "/docs-d2f": {
-    "__comp": "5e95c892",
+  "/__docusaurus/debug-5b9": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "70cab590"
+      "plugin": "plugin---docusaurus-debugbca-b31"
     }
   },
-  "/docs-3bf": {
-    "__comp": "a7bd4aaa",
-    "version": "935f2afb"
+  "/__docusaurus/debug/config-6c9": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbca-b31"
+    }
   },
-  "/docs-d19": {
-    "__comp": "a94703ab"
+  "/__docusaurus/debug/content-600": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbca-b31"
+    },
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-fd1": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbca-b31"
+    }
+  },
+  "/__docusaurus/debug/metadata-a56": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbca-b31"
+    }
+  },
+  "/__docusaurus/debug/registry-02c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbca-b31"
+    }
+  },
+  "/__docusaurus/debug/routes-dc5": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugbca-b31"
+    }
+  },
+  "/docs-04d": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docs-70-c-6f5"
+    }
+  },
+  "/docs-016": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "version": "version---docs-935-398"
+  },
+  "/docs-a06": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/docs/intro-aed": {
-    "__comp": "17896441",
-    "content": "0e384e19"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-be1"
   },
-  "/docs/module-1/-242": {
-    "__comp": "17896441",
-    "content": "51279860"
+  "/docs/module-1/-9bb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-512-6ba"
   },
   "/docs/module-1/chapter-1-ros2-architecture-9a3": {
-    "__comp": "17896441",
-    "content": "5cb40dd4"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-chapter-1-ros-2-architecture-5-cb-05d"
   },
   "/docs/module-1/chapter-2-python-agents-rclpy-6c0": {
-    "__comp": "17896441",
-    "content": "2a0fb190"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-chapter-2-python-agents-rclpy-2-a-0-33a"
   },
   "/docs/module-1/chapter-3-urdf-humanoids-bac": {
-    "__comp": "17896441",
-    "content": "2546053d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-1-chapter-3-urdf-humanoids-254-4c4"
   },
-  "/docs/module-2/-86e": {
-    "__comp": "17896441",
-    "content": "5ad232c4"
+  "/docs/module-2/-2d0": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-5-ad-bc6"
   },
   "/docs/module-2/chapter-1-physics-simulation-with-gazebo-9ee": {
-    "__comp": "17896441",
-    "content": "b3fa04ef"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-chapter-1-physics-simulation-with-gazebob-3-f-8ae"
   },
   "/docs/module-2/chapter-2-high-fidelity-interaction-with-unity-189": {
-    "__comp": "17896441",
-    "content": "1814b8a6"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-chapter-2-high-fidelity-interaction-with-unity-181-b94"
   },
   "/docs/module-2/chapter-3-sensor-simulation-for-perception-9d8": {
-    "__comp": "17896441",
-    "content": "d17be707"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-chapter-3-sensor-simulation-for-perceptiond-17-115"
   },
   "/docs/module-2/glossary-06a": {
-    "__comp": "17896441",
-    "content": "9ec0a01e"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-2-glossary-9-ec-38d"
   },
-  "/docs/module-3/-ad0": {
-    "__comp": "17896441",
-    "content": "9b44c66f"
+  "/docs/module-3/-7bf": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-9-b-4-f4c"
   },
   "/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data-c87": {
-    "__comp": "17896441",
-    "content": "5e2e8c71"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-chapter-1-nvidia-isaac-sim-and-synthetic-data-5-e-2-ddc"
   },
   "/docs/module-3/chapter-2-isaac-ros-and-accelerated-perception-ec7": {
-    "__comp": "17896441",
-    "content": "9f2d2a7c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-chapter-2-isaac-ros-and-accelerated-perception-9-f-2-80c"
   },
   "/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots-e83": {
-    "__comp": "17896441",
-    "content": "afc306eb"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-chapter-3-navigation-with-nav-2-for-humanoid-robotsafc-372"
   },
   "/docs/module-3/glossary-a21": {
-    "__comp": "17896441",
-    "content": "0a08b82f"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-3-glossary-0-a-0-4b5"
   },
-  "/docs/module-4/-b23": {
-    "__comp": "17896441",
-    "content": "c7dfbc38"
+  "/docs/module-4/-668": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-c-7-d-d1e"
   },
   "/docs/module-4/chapter-1-voice-to-action-154": {
-    "__comp": "17896441",
-    "content": "6b125b9d"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-chapter-1-voice-to-action-6-b-1-883"
   },
   "/docs/module-4/chapter-2-cognitive-planning-c22": {
-    "__comp": "17896441",
-    "content": "e56e495c"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-chapter-2-cognitive-planninge-56-e89"
   },
   "/docs/module-4/chapter-3-capstone-integration-c1d": {
-    "__comp": "17896441",
-    "content": "885ab627"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-module-4-chapter-3-capstone-integration-885-6ea"
   },
   "/-2d1": {
-    "__comp": "c4f5d8e4",
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "7680fa0c"
+      "plugin": "plugin---768-3ef"
     },
-    "config": "5e9f5e1a"
+    "config": "config---5-e-9-4f3"
   }
 }
