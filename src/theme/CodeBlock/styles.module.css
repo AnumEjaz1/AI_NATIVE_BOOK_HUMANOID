@@ -1,0 +1,85 @@
+.container {
+  position: relative;
+  margin: 1.75rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.container:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.codeBlockTitle {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+}
+
+[data-theme='dark'] .codeBlockTitle {
+  background-color: var(--ifm-background-surface-color);
+  border-bottom-color: var(--ifm-color-emphasis-600);
+  color: var(--ifm-color-emphasis-300);
+}
+
+.codeBlockTitleText {
+  font-family: var(--ifm-font-family-monospace);
+}
+
+.codeBlockContent {
+  position: relative;
+}
+
+.prism-code {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 1.5rem !important;
+  margin: 0;
+  overflow-x: auto;
+  background: var(--ifm-color-emphasis-50) !important;
+  border-radius: 0;
+  border: none;
+  position: relative;
+}
+
+[data-theme='dark'] .prism-code {
+  background: var(--ifm-background-surface-color) !important;
+}
+
+.codeBlockCopyButton {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 1;
+}
+
+.copyButton {
+  background-color: var(--ifm-color-emphasis-200);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.copyButton:hover {
+  background-color: var(--ifm-color-emphasis-300);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+[data-theme='dark'] .copyButton {
+  background-color: var(--ifm-color-emphasis-700);
+  border-color: var(--ifm-color-emphasis-600);
+  color: var(--ifm-color-emphasis-100);
+}
+
+[data-theme='dark'] .copyButton:hover {
+  background-color: var(--ifm-color-emphasis-600);
+}

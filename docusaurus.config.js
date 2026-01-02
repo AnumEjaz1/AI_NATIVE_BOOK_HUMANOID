@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://ai-native-book-humanoid.vercel.app',
+  url: 'https://your-username.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -63,6 +63,12 @@ const config = {
     ],
   ],
 
+  themes: [],
+  plugins: [],
+  clientModules: [
+    require.resolve('./src/constants/chatbotConfig.js'),
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -93,7 +99,7 @@ const config = {
             label: 'Modules',
           },
           {
-            href: 'https://github.com/your-org/your-project',
+            href: 'https://github.com/AnumEjaz1/AI_NATIVE_BOOK_HUMANOID',
             label: 'GitHub',
             position: 'right',
           },
@@ -155,6 +161,11 @@ const config = {
         ],
       },
     }),
+
+  // Define custom fields that can be accessed in components
+  customFields: {
+    REACT_APP_API_URL: process.env.REACT_APP_API_URL || 'http://127.0.0.1:8000',
+  },
 };
 
 module.exports = config;

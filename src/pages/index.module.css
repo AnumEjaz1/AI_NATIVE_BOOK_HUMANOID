@@ -8,7 +8,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #0d9c63 100%);
   margin-bottom: 2rem;
   min-height: 70vh;
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
@@ -21,7 +21,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.05) 0%, transparent 40%);
+  background: radial-gradient(circle at top right, rgba(143, 214, 11, 0.05) 0%, transparent 40%);
   pointer-events: none;
 }
 
@@ -204,7 +204,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--ifm-color-primary), #3b82f6);
+  background: linear-gradient(90deg, var(--ifm-color-primary), #d111a8);
 }
 
 .features .text--center:hover {
@@ -215,11 +215,11 @@
 
 /* Dark mode adjustments */
 [data-theme='dark'] .heroBanner {
-  background: linear-gradient(135deg, #0c444a 0%, #0f172a 100%);
+  background: linear-gradient(135deg, #0c444a 0%, #98b10d 100%);
 }
 
 [data-theme='dark'] .heroBanner::before {
-  background: radial-gradient(circle at top right, rgba(96, 165, 250, 0.1) 0%, transparent 40%);
+  background: radial-gradient(circle at top right, rgba(44, 194, 7, 0.1) 0%, transparent 40%);
 }
 
 [data-theme='dark'] .hero__title {
@@ -310,7 +310,7 @@
   font-weight: 800;
   color: var(--ifm-color-primary);
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, var(--ifm-color-primary), #1d4ed8);
+  background: linear-gradient(135deg, var(--ifm-color-primary), #4b11d3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -387,7 +387,7 @@
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--ifm-heading-color, var(--ifm-color-emphasis-900));
-  background: linear-gradient(135deg, var(--ifm-color-primary), #1d4ed8);
+  background: linear-gradient(135deg, var(--ifm-color-primary), #15eb55);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -403,7 +403,7 @@
 
 .whySection {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: linear-gradient(135deg, #a30889 0%, #b0a2bb 100%);
   margin: 3rem 0;
 }
 
@@ -412,7 +412,7 @@
 }
 
 .featureCard {
-  background: white;
+  background: rgb(243, 239, 239);
   padding: 2rem;
   border-radius: 16px;
   text-align: center;
@@ -429,7 +429,7 @@
 
 .featureCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 20px 40px rgba(8, 8, 8, 0.12);
 }
 
 .featureIcon {
@@ -462,7 +462,7 @@
 .ctaSection {
   padding: 6rem 0;
   text-align: center;
-  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, #d10da0 100%);
   color: white;
   margin: 3rem 0 0 0;
 }
@@ -471,7 +471,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: white;
+  color: rgb(208, 224, 211);
 }
 
 .ctaSection p {
@@ -486,5 +486,5 @@
 }
 
 [data-theme='dark'] .ctaSection {
-  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  background: linear-gradient(135deg, #bd840a 0%, #0a8c96 100%);
 }

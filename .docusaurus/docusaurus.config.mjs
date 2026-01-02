@@ -48,6 +48,11 @@ export default {
       }
     ]
   ],
+  "themes": [],
+  "plugins": [],
+  "clientModules": [
+    "C:\\Users\\FUJITSU\\OneDrive\\Desktop\\hackathon\\AI_NATIVE_BOOK_HUMANOID\\src\\constants\\chatbotConfig.js"
+  ],
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "colorMode": {
@@ -75,7 +80,7 @@ export default {
           "label": "Modules"
         },
         {
-          "href": "https://github.com/your-org/your-project",
+          "href": "https://github.com/AnumEjaz1/AI_NATIVE_BOOK_HUMANOID",
           "label": "GitHub",
           "position": "right"
         }
@@ -117,7 +122,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2026 My Project, Inc. Built with Docusaurus."
     },
     "prism": {
       "theme": {
@@ -435,19 +440,18 @@ export default {
       "maxHeadingLevel": 3
     }
   },
+  "customFields": {
+    "REACT_APP_API_URL": "http://127.0.0.1:8000"
+  },
   "baseUrlIssueBanner": true,
   "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
   "staticDirectories": [
     "static"
   ],
-  "customFields": {},
-  "plugins": [],
-  "themes": [],
   "scripts": [],
   "headTags": [],
   "stylesheets": [],
-  "clientModules": [],
   "titleDelimiter": "|",
   "noIndex": false,
   "markdown": {

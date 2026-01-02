@@ -44,7 +44,8 @@ def generate_embeddings(chunks: List[TextChunk], model: str = Settings.EMBEDDING
         # Generate embeddings
         response = co.embed(
             texts=texts,
-            model=model
+            model=model,
+            input_type="search_document"  # Added required input_type parameter
         )
 
         embeddings = []
@@ -54,7 +55,7 @@ def generate_embeddings(chunks: List[TextChunk], model: str = Settings.EMBEDDING
                 chunk_id=chunk.id,
                 vector=embedding_vector,
                 model=model,
-                model_version=response.meta["api_version"]["version"],  # This might need adjustment
+                model_version="unknown",  # Simplified approach since metadata access is causing issues
                 dimensions=len(embedding_vector)
             )
             embeddings.append(embedding)

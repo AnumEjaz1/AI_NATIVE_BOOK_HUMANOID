@@ -1,0 +1,155 @@
+openapi: 3.0.0
+info:
+  title: RAG Agent API
+  description: API for interacting with the RAG agent system
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+    description: Local development server
+
+paths:
+  /query:
+    post:
+      summary: Process a user query with the RAG agent
+      description: Sends a user query to the RAG agent and returns a response grounded in book content
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QueryRequest'
+      responses:
+        '200':
+          description: Successful response from the RAG agent
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/QueryResponse'
+        '400':
+          description: Invalid request format
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '500':
+          description: Server error during processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  /health:
+    get:
+      summary: Health check endpoint
+      description: Returns the health status of the service
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthStatus'
+        '500':
+          description: Service is unhealthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+components:
+  schemas:
+    QueryRequest:
+      type: object
+      required:
+        - query
+      properties:
+        query:
+          type: string
+          description: The user's input query
+          example: "What is the main concept of embodied AI?"
+        metadata:
+          type: object
+          description: Additional metadata for the query
+          example:
+            session_id: "abc123"
+            user_id: "user456"
+
+    QueryResponse:
+      type: object
+      required:
+        - response
+      properties:
+        response:
+          type: string
+          description: The RAG agent's response to the query
+          example: "Embodied AI refers to artificial intelligence systems that interact with the physical world through sensors and actuators..."
+        sources:
+          type: array
+          description: List of source documents referenced in the response
+          items:
+            $ref: '#/components/schemas/SourceDocument'
+        metadata:
+          type: object
+          description: Additional metadata about the response
+          example:
+            processing_time: 2.34
+            query_id: "query789"
+
+    SourceDocument:
+      type: object
+      required:
+        - title
+        - content
+      properties:
+        title:
+          type: string
+          description: Title of the source document
+          example: "Introduction to Embodied AI"
+        content:
+          type: string
+          description: Content snippet from the document
+          example: "Embodied AI systems are characterized by their ability to perceive and act in physical environments..."
+        url:
+          type: string
+          description: URL or path to the full document
+          example: "/docs/chapter1.md"
+        score:
+          type: number
+          description: Relevance score of the document
+          format: float
+          minimum: 0
+          maximum: 1
+          example: 0.95
+
+    HealthStatus:
+      type: object
+      required:
+        - status
+        - timestamp
+      properties:
+        status:
+          type: string
+          enum: [healthy]
+          description: Health status of the service
+          example: "healthy"
+        timestamp:
+          type: string
+          format: date-time
+          description: ISO 8601 timestamp of the health check
+          example: "2025-01-01T10:00:00Z"
+
+    ErrorResponse:
+      type: object
+      required:
+        - error
+      properties:
+        error:
+          type: string
+          description: Error message
+          example: "Invalid query format"
+        details:
+          type: object
+          description: Additional error details
+          example:
+            code: "INVALID_QUERY"
+            message: "Query field is required"

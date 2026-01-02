@@ -41,8 +41,8 @@
               },
               "sidebar": "tutorialSidebar",
               "next": {
-                "title": "🤖 ROS 2 Architecture Fundamentals",
-                "permalink": "/docs/module-1/chapter-1-ros2-architecture"
+                "title": "🤖 Module 1: The Robotic Nervous System (ROS 2)",
+                "permalink": "/docs/module-1/"
               }
             },
             {
@@ -67,8 +67,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "🤖 AI Native Book on Humanoid Robotics",
-                "permalink": "/docs/intro"
+                "title": "🤖 Module 1: The Robotic Nervous System (ROS 2)",
+                "permalink": "/docs/module-1/"
               },
               "next": {
                 "title": "Python Agents and Robot Control",
@@ -131,8 +131,8 @@
                 "permalink": "/docs/module-1/chapter-2-python-agents-rclpy"
               },
               "next": {
-                "title": "Physics Simulation with Gazebo",
-                "permalink": "/docs/module-2/chapter-1-physics-simulation-with-gazebo"
+                "title": "🌐 Module 2: The Digital Twin (Gazebo & Unity)",
+                "permalink": "/docs/module-2/"
               }
             },
             {
@@ -154,6 +154,15 @@
               "sidebarPosition": 0,
               "frontMatter": {
                 "sidebar_position": 0
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "🤖 AI Native Book on Humanoid Robotics",
+                "permalink": "/docs/intro"
+              },
+              "next": {
+                "title": "🤖 ROS 2 Architecture Fundamentals",
+                "permalink": "/docs/module-1/chapter-1-ros2-architecture"
               }
             },
             {
@@ -179,8 +188,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Robot Modeling with URDF",
-                "permalink": "/docs/module-1/chapter-3-urdf-humanoids"
+                "title": "🌐 Module 2: The Digital Twin (Gazebo & Unity)",
+                "permalink": "/docs/module-2/"
               },
               "next": {
                 "title": "High-Fidelity Interaction with Unity",
@@ -276,8 +285,8 @@
                 "permalink": "/docs/module-2/chapter-3-sensor-simulation-for-perception"
               },
               "next": {
-                "title": "Chapter 1: NVIDIA Isaac Sim and Synthetic Data",
-                "permalink": "/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data"
+                "title": "🧠 Module 3: The AI-Robot Brain (NVIDIA Isaac™)",
+                "permalink": "/docs/module-3/"
               }
             },
             {
@@ -299,6 +308,15 @@
               "sidebarPosition": 0,
               "frontMatter": {
                 "sidebar_position": 0
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Robot Modeling with URDF",
+                "permalink": "/docs/module-1/chapter-3-urdf-humanoids"
+              },
+              "next": {
+                "title": "Physics Simulation with Gazebo",
+                "permalink": "/docs/module-2/chapter-1-physics-simulation-with-gazebo"
               }
             },
             {
@@ -324,8 +342,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Glossary",
-                "permalink": "/docs/module-2/glossary"
+                "title": "🧠 Module 3: The AI-Robot Brain (NVIDIA Isaac™)",
+                "permalink": "/docs/module-3/"
               },
               "next": {
                 "title": "Chapter 2: Isaac ROS and Accelerated Perception",
@@ -417,8 +435,8 @@
                 "permalink": "/docs/module-3/chapter-3-navigation-with-nav2-for-humanoid-robots"
               },
               "next": {
-                "title": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing",
-                "permalink": "/docs/module-4/chapter-1-voice-to-action"
+                "title": "🗣️ Module 4: Vision-Language-Action (VLA)",
+                "permalink": "/docs/module-4/"
               }
             },
             {
@@ -440,6 +458,15 @@
               "sidebarPosition": 0,
               "frontMatter": {
                 "sidebar_position": 0
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Glossary",
+                "permalink": "/docs/module-2/glossary"
+              },
+              "next": {
+                "title": "Chapter 1: NVIDIA Isaac Sim and Synthetic Data",
+                "permalink": "/docs/module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data"
               }
             },
             {
@@ -465,8 +492,8 @@
               },
               "sidebar": "tutorialSidebar",
               "previous": {
-                "title": "Module 3 Glossary: The AI-Robot Brain (NVIDIA Isaac™)",
-                "permalink": "/docs/module-3/glossary"
+                "title": "🗣️ Module 4: Vision-Language-Action (VLA)",
+                "permalink": "/docs/module-4/"
               },
               "next": {
                 "title": "Chapter 2: Cognitive Planning - Using LLMs for Natural Language Goal Conversion",
@@ -550,6 +577,15 @@
               "sidebarPosition": 0,
               "frontMatter": {
                 "sidebar_position": 0
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Module 3 Glossary: The AI-Robot Brain (NVIDIA Isaac™)",
+                "permalink": "/docs/module-3/glossary"
+              },
+              "next": {
+                "title": "Chapter 1: Voice-to-Action - Speech-to-Text Pipelines and ROS 2 Action Routing",
+                "permalink": "/docs/module-4/chapter-1-voice-to-action"
               }
             }
           ],
@@ -564,6 +600,10 @@
                 "type": "category",
                 "label": "Module 1 - The Robotic Nervous System (ROS 2)",
                 "items": [
+                  {
+                    "type": "doc",
+                    "id": "module-1/index"
+                  },
                   {
                     "type": "doc",
                     "id": "module-1/chapter-1-ros2-architecture"
@@ -584,6 +624,10 @@
                 "type": "category",
                 "label": "Module 2 - The Digital Twin (Gazebo & Unity)",
                 "items": [
+                  {
+                    "type": "doc",
+                    "id": "module-2/index"
+                  },
                   {
                     "type": "doc",
                     "id": "module-2/chapter-1-physics-simulation-with-gazebo"
@@ -610,6 +654,10 @@
                 "items": [
                   {
                     "type": "doc",
+                    "id": "module-3/index"
+                  },
+                  {
+                    "type": "doc",
                     "id": "module-3/chapter-1-nvidia-isaac-sim-and-synthetic-data"
                   },
                   {
@@ -632,6 +680,10 @@
                 "type": "category",
                 "label": "Module 4 - Vision-Language-Action (VLA)",
                 "items": [
+                  {
+                    "type": "doc",
+                    "id": "module-4/index"
+                  },
                   {
                     "type": "doc",
                     "id": "module-4/chapter-1-voice-to-action"
@@ -666,6 +718,11 @@
   },
   "docusaurus-plugin-content-pages": {
     "default": [
+      {
+        "type": "jsx",
+        "permalink": "/chatbot",
+        "source": "@site/src/pages/chatbot.js"
+      },
       {
         "type": "jsx",
         "permalink": "/",

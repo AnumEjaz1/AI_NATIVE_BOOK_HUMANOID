@@ -84,3 +84,8 @@ htmlcov/
 nox/
 .pyre/
 .mypy_cache/
+backend/__pycache__/
+backend/*.py[cod]
+backend/venv/
+backend/env/
+backend/.env

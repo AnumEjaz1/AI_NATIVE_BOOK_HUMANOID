@@ -6,7 +6,20 @@
       "Bash(.specify/scripts/powershell/create-new-feature.ps1 -Json \"RAG Spec-1: Website URL Ingestion, Embedding Generation, and Vector Storage\n\nTarget audience:\nAI engineers and system developers implementing the ingestion layer of a book-centric RAG system\n\nFocus:\nReliable extraction of deployed Docusaurus book content, generation of high-quality semantic embeddings using Cohere models, and persistent storage in Qdrant for downstream retrieval\n\nSuccess criteria:\n\nAll public GitHub Pages URLs of the book are programmatically discovered and ingested\n\nText content is cleanly extracted, normalized, and chunked with metadata \\(URL, section, heading\\)\n\nEmbeddings are generated using Cohere embedding models with consistent dimensionality\n\nAll vectors are successfully stored in Qdrant Cloud \\(Free Tier\\) with verifiable counts\n\nA test query confirms vectors are retrievable and semantically relevant\n\nThe pipeline is deterministic and re-runnable without duplication issues\n\nConstraints:\n\nBackend language: Python\n\nEmbedding provider: Cohere\n\nVector database: Qdrant Cloud \\(Free Tier\\)\n\nArchitecture: Single-spec, ingestion-only \\(no agent or UI logic\\)\n\nConfiguration via environment variables \\(.env\\)\n\nLogging required for each pipeline stage \\(ingest → chunk → embed → store\\)\n\nMust be compatible with later FastAPI integration\n\nTimeline:\n\nComplete within 3–5 tasks\" -Number 1 -ShortName \"rag-ingestion\" \"RAG Spec-1: Website URL Ingestion, Embedding Generation, and Vector Storage\")",
       "Bash(git rev-parse --git-dir)",
       "Bash(mkdir -p history/prompts/rag-ingestion)",
-      "Bash(pip install python-dotenv requests beautifulsoup4 cohere qdrant-client)"
+      "Bash(pip install python-dotenv requests beautifulsoup4 cohere qdrant-client)",
+      "Bash(ping -n 3 github.com)",
+      "Bash(findstr -i \"requests urllib3\")",
+      "Bash(python -c \"import os; print\\(''HTTP_PROXY:'', os.environ.get\\(''HTTP_PROXY''\\)\\); print\\(''HTTPS_PROXY:'', os.environ.get\\(''HTTPS_PROXY''\\)\\); print\\(''http_proxy:'', os.environ.get\\(''http_proxy''\\)\\); print\\(''https_proxy:'', os.environ.get\\(''https_proxy''\\)\\)\")",
+      "Bash(curl -I \"https://anumejaz1.github.io/AI_NATIVE_BOOK_HUMANOID/\")",
+      "Bash(findstr \"200\\\\|301\\\\|302\")",
+      "Bash(curl -I \"https://ai-native-book-humanoid-fd15r05z0-anum-ejazs-projects.vercel.app/\")",
+      "Bash(python main.py)",
+      "Bash(npx docusaurus start --port 3000)",
+      "Bash(npm run serve)",
+      "Bash(pkill -f \"python.*main.py\")",
+      "Bash(pkill -f \"main.py\")",
+      "Bash(taskkill /F /IM python.exe)",
+      "Bash(timeout 5s wait)"
     ]
   }
 }

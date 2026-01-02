@@ -1,0 +1,268 @@
+openapi: 3.0.0
+info:
+  title: RAG Retrieval Validation API
+  description: API specification for validating RAG retrieval pipelines
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+    description: Local validation server
+
+paths:
+  /validate-connection:
+    post:
+      summary: Validate connection to Qdrant Cloud
+      description: Tests the connection to Qdrant Cloud and verifies collection accessibility
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ConnectionConfig'
+      responses:
+        '200':
+          description: Connection validation successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ConnectionResult'
+        '400':
+          description: Invalid configuration
+        '500':
+          description: Connection failed
+
+  /retrieve:
+    post:
+      summary: Perform vector similarity search and validation
+      description: Accepts a query, generates embedding, performs search, and validates results
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RetrieveRequest'
+      responses:
+        '200':
+          description: Retrieval and validation successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ValidationResult'
+        '400':
+          description: Invalid query or parameters
+        '500':
+          description: Retrieval failed
+
+  /batch-validate:
+    post:
+      summary: Execute multiple test queries for comprehensive validation
+      description: Runs a series of test queries to validate the entire retrieval pipeline
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BatchValidationRequest'
+      responses:
+        '200':
+          description: Batch validation completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BatchValidationResult'
+        '400':
+          description: Invalid batch request
+        '500':
+          description: Batch validation failed
+
+components:
+  schemas:
+    ConnectionConfig:
+      type: object
+      properties:
+        qdrant_url:
+          type: string
+          description: Qdrant Cloud URL
+          example: "https://your-cluster.qdrant.tech:6333"
+        qdrant_api_key:
+          type: string
+          description: Qdrant API key
+        collection_name:
+          type: string
+          description: Name of the collection to validate
+          example: "book_embeddings"
+      required:
+        - qdrant_url
+        - qdrant_api_key
+        - collection_name
+
+    ConnectionResult:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: Whether the connection was successful
+        message:
+          type: string
+          description: Descriptive message about the connection status
+        collection_exists:
+          type: boolean
+          description: Whether the specified collection exists
+        vector_count:
+          type: integer
+          description: Number of vectors in the collection
+        embedding_dimension:
+          type: integer
+          description: Dimension of the stored embeddings
+
+    RetrieveRequest:
+      type: object
+      properties:
+        query:
+          type: string
+          description: The search query text
+          example: "What is vector retrieval?"
+        top_k:
+          type: integer
+          description: Number of results to retrieve
+          default: 5
+          minimum: 1
+          maximum: 100
+        threshold:
+          type: number
+          description: Minimum similarity score threshold
+          default: 0.5
+          minimum: 0.0
+          maximum: 1.0
+      required:
+        - query
+
+    RetrievedChunk:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the chunk
+        content:
+          type: string
+          description: The actual text content
+        url:
+          type: string
+          description: Source URL of the content
+        section:
+          type: string
+          description: Document section where content appears
+        heading:
+          type: string
+          description: Heading associated with the content
+        chunk_id:
+          type: string
+          description: Internal identifier for the chunk
+        similarity_score:
+          type: number
+          description: Cosine similarity score (0.0 to 1.0)
+        metadata:
+          type: object
+          description: Additional metadata stored with the chunk
+
+    ValidationResult:
+      type: object
+      properties:
+        query:
+          type: string
+          description: The original search query
+        retrieved_chunks:
+          type: array
+          items:
+            $ref: '#/components/schemas/RetrievedChunk'
+          description: List of retrieved content chunks
+        metadata_complete:
+          type: boolean
+          description: Whether all required metadata fields are present
+        validation_passed:
+          type: boolean
+          description: Whether the validation criteria were met
+        relevance_score:
+          type: number
+          description: Assessment of result relevance (0.0 to 1.0)
+        issues:
+          type: array
+          items:
+            type: string
+          description: List of any issues detected during validation
+        execution_time:
+          type: number
+          description: Time taken for the retrieval in seconds
+
+    BatchValidationRequest:
+      type: object
+      properties:
+        queries:
+          type: array
+          items:
+            type: string
+          description: List of test queries to execute
+          example: ["What is vector retrieval?", "Explain semantic search", "How does RAG work?"]
+        top_k:
+          type: integer
+          description: Number of results to retrieve for each query
+          default: 5
+        validate_metadata:
+          type: boolean
+          description: Whether to validate metadata completeness
+          default: true
+        expected_relevance:
+          type: string
+          description: Expected type of content for relevance validation
+          example: "technical documentation"
+
+    BatchValidationResult:
+      type: object
+      properties:
+        total_queries:
+          type: integer
+          description: Total number of queries executed
+        successful_retrievals:
+          type: integer
+          description: Number of queries with successful results
+        failed_retrievals:
+          type: integer
+          description: Number of queries that failed validation
+        validation_results:
+          type: array
+          items:
+            $ref: '#/components/schemas/ValidationResult'
+          description: Individual validation results for each query
+        overall_success_rate:
+          type: number
+          description: Percentage of successful validations (0.0 to 1.0)
+        execution_time:
+          type: number
+          description: Total execution time in seconds
+        summary_issues:
+          type: array
+          items:
+            type: string
+          description: Summary of issues across all validations
+        pipeline_status:
+          $ref: '#/components/schemas/PipelineStatus'
+
+    PipelineStatus:
+      type: object
+      properties:
+        connection_successful:
+          type: boolean
+          description: Whether connection to Qdrant was established
+        metadata_completeness:
+          type: number
+          description: Percentage of results with complete metadata (0.0 to 1.0)
+        average_similarity_score:
+          type: number
+          description: Average similarity score across all results
+        reproducibility_score:
+          type: number
+          description: Score measuring consistency across multiple runs (0.0 to 1.0)
+        error_logs:
+          type: array
+          items:
+            type: string
+          description: List of any errors or warnings encountered

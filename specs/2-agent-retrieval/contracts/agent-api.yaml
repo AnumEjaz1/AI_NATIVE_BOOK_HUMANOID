@@ -1,0 +1,269 @@
+openapi: 3.0.0
+info:
+  title: RAG Agent Construction API
+  description: API specification for creating and managing retrieval-augmented agents
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000
+    description: Local agent server
+
+paths:
+  /create-agent:
+    post:
+      summary: Create a new retrieval-augmented agent
+      description: Initializes an OpenAI agent with retrieval capabilities and grounding instructions
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AgentConfig'
+      responses:
+        '200':
+          description: Agent created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AgentCreationResult'
+        '400':
+          description: Invalid configuration
+        '500':
+          description: Agent creation failed
+
+  /process-query:
+    post:
+      summary: Process a user query through the retrieval-augmented agent
+      description: Takes a user query, retrieves relevant content, and generates a grounded response
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AgentRequest'
+      responses:
+        '200':
+          description: Query processed successfully with grounded response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AgentResponse'
+        '400':
+          description: Invalid query or parameters
+        '500':
+          description: Query processing failed
+
+  /validate-grounding:
+    post:
+      summary: Validate that a response is grounded in retrieved content
+      description: Checks if the agent response properly incorporates the provided context
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GroundingValidationRequest'
+      responses:
+        '200':
+          description: Grounding validation completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GroundingValidationResult'
+        '400':
+          description: Invalid validation request
+        '500':
+          description: Validation failed
+
+components:
+  schemas:
+    AgentConfig:
+      type: object
+      properties:
+        agent_name:
+          type: string
+          description: Name for the agent
+          example: "book_retrieval_agent"
+        instructions:
+          type: string
+          description: Instructions for the agent's behavior
+          example: "You are a helpful assistant that answers questions based on the provided book content."
+        qdrant_url:
+          type: string
+          description: Qdrant Cloud URL
+          example: "https://your-cluster.qdrant.tech:6333"
+        qdrant_api_key:
+          type: string
+          description: Qdrant API key
+        collection_name:
+          type: string
+          description: Name of the collection to retrieve from
+          example: "book_embeddings"
+        cohere_model:
+          type: string
+          description: Cohere model name for embeddings
+          example: "embed-multilingual-v3.0"
+      required:
+        - agent_name
+        - instructions
+        - qdrant_url
+        - qdrant_api_key
+        - collection_name
+        - cohere_model
+
+    AgentCreationResult:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: Whether the agent was created successfully
+        agent_id:
+          type: string
+          description: Unique identifier for the created agent
+        message:
+          type: string
+          description: Descriptive message about the creation status
+        initialization_time:
+          type: number
+          description: Time taken to initialize the agent in seconds
+
+    AgentRequest:
+      type: object
+      properties:
+        query:
+          type: string
+          description: The user's query or request
+          example: "What is vector retrieval?"
+        user_id:
+          type: string
+          description: Identifier for the user making the request
+        context:
+          type: object
+          description: Additional context for the request
+        top_k:
+          type: integer
+          description: Number of results to retrieve from Qdrant
+          default: 5
+          minimum: 1
+          maximum: 20
+        similarity_threshold:
+          type: number
+          description: Minimum similarity score for inclusion
+          default: 0.5
+          minimum: 0.0
+          maximum: 1.0
+
+    RetrievedChunk:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique identifier for the chunk
+        content:
+          type: string
+          description: The actual text content
+        url:
+          type: string
+          description: Source URL of the content
+        section:
+          type: string
+          description: Document section where content appears
+        heading:
+          type: string
+          description: Heading associated with the content
+        chunk_id:
+          type: string
+          description: Internal identifier for the chunk
+        similarity_score:
+          type: number
+          description: Cosine similarity score (0.0 to 1.0)
+        metadata:
+          type: object
+          description: Additional metadata stored with the chunk
+
+    RetrievedContext:
+      type: object
+      properties:
+        chunks:
+          type: array
+          items:
+            $ref: '#/components/schemas/RetrievedChunk'
+          description: List of content chunks retrieved from Qdrant
+        retrieval_query:
+          type: string
+          description: The query used to retrieve the content
+        retrieval_time:
+          type: number
+          description: Time taken to retrieve content in seconds
+        relevance_threshold:
+          type: number
+          description: Minimum similarity score for inclusion
+        total_chunks_found:
+          type: integer
+          description: Total number of chunks found before filtering
+
+    AgentResponse:
+      type: object
+      properties:
+        content:
+          type: string
+          description: The agent's response to the user query
+        source_chunks:
+          type: array
+          items:
+            type: string
+          description: IDs of the retrieved chunks used in the response
+        confidence_score:
+          type: number
+          description: Confidence level in the response accuracy (0.0 to 1.0)
+        grounding_verification:
+          type: boolean
+          description: Whether the response was verified to be grounded in retrieved content
+        citations:
+          type: array
+          items:
+            type: object
+            properties:
+              chunk_id:
+                type: string
+                description: ID of the cited chunk
+              text:
+                type: string
+                description: Excerpt from the cited content
+          description: Citations to specific parts of the retrieved content
+        processing_time:
+          type: number
+          description: Time taken to generate the response in seconds
+        retrieved_context:
+          $ref: '#/components/schemas/RetrievedContext'
+          description: The context used to generate the response
+
+    GroundingValidationRequest:
+      type: object
+      properties:
+        response:
+          type: string
+          description: The agent response to validate
+        retrieved_context:
+          $ref: '#/components/schemas/RetrievedContext'
+          description: Context used to generate the response
+        query:
+          type: string
+          description: Original query that generated this response
+
+    GroundingValidationResult:
+      type: object
+      properties:
+        is_grounded:
+          type: boolean
+          description: Whether the response is properly grounded in the provided context
+        confidence_score:
+          type: number
+          description: Confidence in the grounding validation (0.0 to 1.0)
+        issues:
+          type: array
+          items:
+            type: string
+          description: List of any issues detected during validation
+        validation_time:
+          type: number
+          description: Time taken to validate grounding in seconds
